@@ -18,8 +18,8 @@ class Add(Resource):
         #step1b, verify validity of posted data
         status_code = checkPostedData(postedData, "add")
         if (status_code!=200):
-            retJson{
-            "Message":"An error happened"
+            retJson={
+            "Message":"An error happened",
             "Status Code": status_code
             }
         x = postedData['x']
