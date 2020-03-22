@@ -19,7 +19,7 @@ class Add4(Resource):
         if resultChek!=200:
             retResChecl = {
             "Message Fail Dawg": "Failed My Man",
-            "Status Code": 304
+            "Status Code":resultChek
             }
             return retResChecl
         x = pData['x']
@@ -32,7 +32,7 @@ class Add4(Resource):
         "Status Code":200
         }
         return jsonify(retJZ)
-
+#{"Message Good": 246, "Status Code": 200}
 api.add_resource(Add4, '/add4')
 
 if __name__=="__main__":
